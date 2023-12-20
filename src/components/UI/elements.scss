@@ -1,0 +1,32 @@
+.box-blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 60vh;
+  background-color: #0c7e5a5d;
+  z-index: -2;
+  filter: blur(135px);
+}
+
+.underline-hover {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #00df9a;
+    transition:
+      width 0.3s,
+      left 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}

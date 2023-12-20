@@ -1,0 +1,11 @@
+.start-btn {
+    transition: box-shadow ease-in-out .3s, color ease-in-out .3s;
+    &:hover {
+        box-shadow: 0 0 30px #00df9a;
+        color: #ffffff;
+    }
+}
+
+span {
+    text-shadow: 0 0 10px #00df9a;
+}

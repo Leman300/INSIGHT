@@ -1,0 +1,15 @@
+.navbar {
+  position: sticky;
+}
+
+.shadow-navbar {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.logo {
+  text-shadow: 0 0 5px #00df9a;
+  transition: text-shadow 0.3s;
+  &:hover {
+    text-shadow: 0 0 10px #00df9a;
+  }
+}
