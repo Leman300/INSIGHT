@@ -67,57 +67,23 @@ const Navbar: React.FC = () => {
             INSIGHT.
           </Link>
         </div>
+
         <div className="hidden md:flex">
-          <Link
-            to="solutions"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 underline-hover"
-          >
-            Solutions
-          </Link>
-          <Link
-            to="features"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 underline-hover"
-          >
-            Features
-          </Link>
-          <Link
-            to="services"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 underline-hover"
-          >
-            Services
-          </Link>
-          <Link
-            to="aboutus"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 underline-hover"
-          >
-            About
-          </Link>
-          <Link
-            to="contact"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 underline-hover"
-          >
-            Contact
-          </Link>
+          {["solutions", "features", "services", "aboutus", "contact"].map(
+            (section) => (
+              <Link
+                key={section}
+                to={section}
+                spy
+                smooth
+                offset={-95}
+                duration={1350}
+                className="nav-link m-4 cursor-pointer underline-hover"
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            ),
+          )}
         </div>
 
         <div
@@ -130,11 +96,9 @@ const Navbar: React.FC = () => {
         </div>
 
         <div
-          className={
-            nav
-              ? "fixed flex flex-col left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000] ease-in-out duration-500 z-10"
-              : "fixed flex flex-col top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000] ease-in-out duration-500 left-[-100%] z-10"
-          }
+          className={`fixed flex flex-col top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000] ease-in-out duration-500 ${
+            nav ? "left-0" : "left-[-100%]"
+          } z-10`}
           ref={navRef}
         >
           <div className="w-full text-3xl font-bold text-[#00df9a] m-4 mt-7">
@@ -149,61 +113,23 @@ const Navbar: React.FC = () => {
               INSIGHT.
             </Link>
           </div>
-          <Link
-            to="solutions"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 w-1/5 underline-hover"
-            onClick={handleLinkClick}
-          >
-            Solutions
-          </Link>
-          <Link
-            to="features"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 w-1/5 underline-hover"
-            onClick={handleLinkClick}
-          >
-            Features
-          </Link>
-          <Link
-            to="services"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 w-1/5 underline-hover"
-            onClick={handleLinkClick}
-          >
-            Services
-          </Link>
-          <Link
-            to="aboutus"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 w-1/5 underline-hover"
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-          <Link
-            to="contact"
-            spy
-            smooth
-            offset={-95}
-            duration={1350}
-            className="nav-link m-4 w-1/5 underline-hover"
-            onClick={handleLinkClick}
-          >
-            Contact
-          </Link>
+
+          {["solutions", "features", "services", "aboutus", "contact"].map(
+            (section) => (
+              <Link
+                key={section}
+                to={section}
+                spy
+                smooth
+                offset={-95}
+                duration={1350}
+                className="nav-link m-4 w-1/5 cursor-pointer underline-hover"
+                onClick={handleLinkClick}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            ),
+          )}
         </div>
       </div>
     </div>
