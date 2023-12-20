@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { AiOutlineClose } from "react-icons/ai"
+import { Link } from "react-scroll"
 import "./navbar.scss"
 import "../UI/elements.scss"
 
@@ -55,26 +56,68 @@ const Navbar: React.FC = () => {
     >
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         <div className="w-full text-3xl font-bold text-[#00df9a]">
-          <a className="logo" href="/#">
+          <Link
+            to="hero"
+            spy
+            smooth
+            offset={0}
+            duration={1350}
+            className="logo cursor-pointer"
+          >
             INSIGHT.
-          </a>
+          </Link>
         </div>
         <div className="hidden md:flex">
-          <a href="/#solutions" className="nav-link m-4 underline-hover">
+          <Link
+            to="solutions"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
+            className="nav-link m-4 underline-hover"
+          >
             Solutions
-          </a>
-          <a href="/#features" className="nav-link m-4 underline-hover">
+          </Link>
+          <Link
+            to="features"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
+            className="nav-link m-4 underline-hover"
+          >
             Features
-          </a>
-          <a href="/#services" className="nav-link m-4 underline-hover">
+          </Link>
+          <Link
+            to="services"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
+            className="nav-link m-4 underline-hover"
+          >
             Services
-          </a>
-          <a href="/#aboutus" className="nav-link m-4 underline-hover">
+          </Link>
+          <Link
+            to="aboutus"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
+            className="nav-link m-4 underline-hover"
+          >
             About
-          </a>
-          <a href="/#contact" className="nav-link m-4 underline-hover">
+          </Link>
+          <Link
+            to="contact"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
+            className="nav-link m-4 underline-hover"
+          >
             Contact
-          </a>
+          </Link>
         </div>
 
         <div
@@ -95,45 +138,72 @@ const Navbar: React.FC = () => {
           ref={navRef}
         >
           <div className="w-full text-3xl font-bold text-[#00df9a] m-4 mt-7">
-            <a className="logo" href="/#">
+            <Link
+              to="home"
+              spy
+              smooth
+              offset={0}
+              duration={1350}
+              className="logo"
+            >
               INSIGHT.
-            </a>
+            </Link>
           </div>
-          <a
-            href="/#solutions"
+          <Link
+            to="solutions"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
             className="nav-link m-4 w-1/5 underline-hover"
             onClick={handleLinkClick}
           >
             Solutions
-          </a>
-          <a
-            href="/#features"
+          </Link>
+          <Link
+            to="features"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
             className="nav-link m-4 w-1/5 underline-hover"
             onClick={handleLinkClick}
           >
             Features
-          </a>
-          <a
-            href="/#services"
+          </Link>
+          <Link
+            to="services"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
             className="nav-link m-4 w-1/5 underline-hover"
             onClick={handleLinkClick}
           >
             Services
-          </a>
-          <a
-            href="/#aboutus"
+          </Link>
+          <Link
+            to="aboutus"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
             className="nav-link m-4 w-1/5 underline-hover"
             onClick={handleLinkClick}
           >
             About
-          </a>
-          <a
-            href="/#contact"
+          </Link>
+          <Link
+            to="contact"
+            spy
+            smooth
+            offset={-95}
+            duration={1350}
             className="nav-link m-4 w-1/5 underline-hover"
             onClick={handleLinkClick}
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>
