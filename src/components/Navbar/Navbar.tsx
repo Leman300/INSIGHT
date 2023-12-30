@@ -58,6 +58,7 @@ const Navbar: React.FC = () => {
         <div className="w-full text-3xl font-bold text-[#00df9a]">
           <Link
             to="hero"
+            href="#hero"
             spy
             smooth
             offset={0}
@@ -74,6 +75,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={section}
                 to={section}
+                href={section}
                 spy
                 smooth
                 offset={-95}
@@ -104,6 +106,7 @@ const Navbar: React.FC = () => {
           <div className="w-full text-3xl font-bold text-[#00df9a] m-4 mt-7">
             <Link
               to="home"
+              href="#home"
               spy
               smooth
               offset={0}
@@ -119,6 +122,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={section}
                 to={section}
+                href={section}
                 spy
                 smooth
                 offset={-95}
