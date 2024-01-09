@@ -1,17 +1,25 @@
-import SetGoal from "../../assets/set_goal.jpg"
-import CelebrateSuccess from "../../assets/celebrate_success.jpg"
-import ControlData from "../../assets/control_data.jpg"
+import SetGoalDesktop from "../../assets/set_goal.jpg"
+import CelebrateSuccessDesktop from "../../assets/celebrate_success.jpg"
+import ControlDataDesktop from "../../assets/control_data.jpg"
+import SetGoalMobile from "../../assets/set_goal-min.jpg"
+import CelebrateSuccessMobile from "../../assets/celebrate_success-min.jpg"
+import ControlDataMobile from "../../assets/control_data-min.jpg"
 
 const Services = () => {
   return (
-    <section id="services" className="bg-white">
+    <section id="services" className="bg-white overflow-x-hidden">
       <h2 className="flex justify-center text-3xl sm:text-4xl md:text-5xl font-bold pt-12">
         Services
       </h2>
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
-          className="w-11/12"
-          src={SetGoal}
+          className="w-11/12 md:block hidden"
+          src={SetGoalDesktop}
+          alt="Guy with briefcase looking at his life goal"
+        />
+        <img
+          className="w-11/12 md:hidden"
+          src={SetGoalMobile}
           alt="Guy with briefcase looking at his life goal"
         />
         <div className="mt-10 md:mt-0">
@@ -46,8 +54,13 @@ const Services = () => {
       </div>
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
-          className="order-1 w-full"
-          src={ControlData}
+          className="order-1 w-full md:block hidden"
+          src={ControlDataDesktop}
+          alt="Women checking the data that comes from printer"
+        />
+        <img
+          className="order-1 w-full md:hidden"
+          src={ControlDataMobile}
           alt="Women checking the data that comes from printer"
         />
         <div className="mt-10 md:mt-0">
@@ -83,8 +96,13 @@ const Services = () => {
       </div>
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
-          className="w-full"
-          src={CelebrateSuccess}
+          className="w-full md:block hidden"
+          src={CelebrateSuccessDesktop}
+          alt="Party in office because of the success"
+        />
+        <img
+          className="w-full md:hidden"
+          src={CelebrateSuccessMobile}
           alt="Party in office because of the success"
         />
         <div className="mt-10 md:mt-0">
