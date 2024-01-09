@@ -1,5 +1,5 @@
-import AnalyticsPictureDesktop from "../../assets/analytics.jpg"
-import AnalyticsPictureMobile from "../../assets/analytics-min.jpg"
+import AnalyticsPictureDesktop from "../../assets/analytics.webp"
+import AnalyticsPictureMobile from "../../assets/analytics-min.webp"
 import "./solutions.scss"
 
 const Solutions = () => {

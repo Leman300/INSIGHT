@@ -1,9 +1,9 @@
-import SetGoalDesktop from "../../assets/set_goal.jpg"
-import CelebrateSuccessDesktop from "../../assets/celebrate_success.jpg"
-import ControlDataDesktop from "../../assets/control_data.jpg"
-import SetGoalMobile from "../../assets/set_goal-min.jpg"
-import CelebrateSuccessMobile from "../../assets/celebrate_success-min.jpg"
-import ControlDataMobile from "../../assets/control_data-min.jpg"
+import SetGoalDesktop from "../../assets/set_goal.webp"
+import CelebrateSuccessDesktop from "../../assets/celebrate_success.webp"
+import ControlDataDesktop from "../../assets/control_data.webp"
+import SetGoalMobile from "../../assets/set_goal-min.webp"
+import CelebrateSuccessMobile from "../../assets/celebrate_success-min.webp"
+import ControlDataMobile from "../../assets/control_data-min.webp"
 
 const Services = () => {
   return (
