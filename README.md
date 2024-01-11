@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="INSIGHT/public/screenshot-insight.png" alt="INSIGHT Screenshot" width="800">
+  <img src="https://github.com/Leman300/INSIGHT/blob/main/public/screenshot-insight.png" alt="INSIGHT Screenshot" width="800">
 </p>
 
 ## Overview
@@ -36,7 +36,7 @@ INSIGHT is more than just a website; it's the culmination of my journey into the
 INSIGHT, my debut project with React, Vite, TypeScript, and Tailwind CSS, not only boasts an aesthetically pleasing design but also excels in performance. The project underwent rigorous testing using Google Lighthouse, and the results speak for themselves.
 
 <p align="center">
-  <img src="charts-insight.png" alt="INSIGHT Lighthouse raport screenshot" width="800">
+  <img src="https://github.com/Leman300/INSIGHT/blob/main/public/charts-insight.png" alt="INSIGHT Lighthouse raport screenshot" width="800">
 </p>
 
 ## Impressive Scores
@@ -56,11 +56,12 @@ Feel free to explore the Lighthouse report for yourself in the `screenshots` dir
 
 Thank you for taking the time to discover INSIGHT, my inaugural venture into the world of web development.
 
-
 ### Acknowledgments
+
 A big shoutout to the open-source community and the creators of the amazing libraries that made this project possible. Thanks for being awesome! 🙌
 
 ### Feedback
+
 If you have any feedback, suggestions, or just want to say hi, feel free to open an issue. I'd love to hear from you!
 
 <p align="center">
